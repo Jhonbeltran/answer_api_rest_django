@@ -1,7 +1,7 @@
 from .models import Answer
 from rest_framework import serializers
 
-class AnswerSeralizer(serializers.HyperlinkedModelSerializer):
+class AnswerSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Answer
 		fields = ('id', 

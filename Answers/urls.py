@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from . import views
+from .views import AnswerList
 
 urlpatterns = [
-    url(r'^answers/$', DuckList.as_view(), name='answers'),
+    url(r'^answers/$', AnswerList.as_view(), name='answers'),
 ]
