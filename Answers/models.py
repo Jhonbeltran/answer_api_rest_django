@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Answer(models.Model):
+	change_pass_answer = models.CharField(max_length=255)
+	relation_answer = models.CharField(max_length=255)
+	personal_answer = models.CharField(max_length=255)
+	pay_method_answer = models.CharField(max_length=255)
+	age_answer = models.IntegerField(max_length=255)
