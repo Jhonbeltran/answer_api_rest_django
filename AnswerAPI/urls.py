@@ -20,9 +20,9 @@ from rest_framework.authtoken import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/v1/', include('Answers.urls'), name = "api_answers")
+    url(r'^api/v1/', include('Answers.urls', namespace = 'answers'))
 ]
 
 urlpatterns += [
-	url(r'^api/v1/auth', include('rest_framework.urls'), name = 'rest_framework'),
+	url(r'^api/v1/auth', include('rest_framework.urls', namespace = 'rest_framework'))
 ]
